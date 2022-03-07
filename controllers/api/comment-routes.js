@@ -1,7 +1,7 @@
 const router = require('express').Router();
 //Require the correct files from the models and authorizations
 
-const Auth = require('../../utils/auth');
+const withAuth = require('../../utils/auth');
 const { Comment } = require('../../models/Comment')
 
 router.post('/', withAuth, async (req, res) => {
