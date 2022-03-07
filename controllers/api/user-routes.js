@@ -1,5 +1,6 @@
 const router = require('express').Router();
 //Require the correct files from the models
+const { User } = require('../../models/User')
 
 router.post('/', async (req, res) => {
   // Create the correct asychronous function for this login post request with error handling
